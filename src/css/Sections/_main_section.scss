@@ -1,0 +1,41 @@
+#main {
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  min-width: 70%;
+  margin: 0 20px;
+}
+
+#main-title {
+  font-weight: 700;
+  margin: 30px 0;
+  font-size: 3.7em;
+  @include tablet {
+    font-size: 4.85em;
+
+  }
+  @include large-desktop {
+    font-size: 6.5em;
+    margin: 40px 0;
+  }
+}
+
+.main-subheading {
+  font-size: 1.5em;
+  color: gray;
+  @include large-desktop  {
+    font-size: 2em;
+  }
+
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}

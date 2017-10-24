@@ -1,0 +1,34 @@
+@import "mixins";
+@import "colors";
+
+html, body, #root, #reactRoot {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+
+  opacity: 0;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+@import "Sections/main_section";
+@import "Sections/portfolio";
+@import "navbar";
+@import "Sections/experience";

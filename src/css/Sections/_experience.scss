@@ -1,0 +1,12 @@
+.experience-item {
+  max-width: 90%;
+  margin: 40px auto;
+
+  @include large-desktop {
+    max-width: 75%;
+  }
+}
+
+.right {
+  text-align: right;
+}
