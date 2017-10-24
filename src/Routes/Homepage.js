@@ -69,9 +69,18 @@ class Homepage extends Component {
             <div id={"reactRoot"} onScroll={this.handleScroll}>
                 <Dots number={numberOfSections} active={this.state.currentElement} handleCLick={(i) => {scrollToComponent(this.sections[i])}}/>
                 <Navbar>
-                        <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[1])}}>portfolio</p>
-                        <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[2])}}>skills</p>
-                        <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[3])}}>experience</p>
+                        <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[1], {
+                            align: 'top',
+                            offset: -50
+                        })}}>portfolio</p>
+                        <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[2],  {
+                            align: 'top',
+                            offset: 0
+                        })}}>skills</p>
+                        <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[3],  {
+                            align: 'top',
+                            offset: -50
+                        })}}>experience</p>
                 </Navbar>
                 {sections}
             </div>
