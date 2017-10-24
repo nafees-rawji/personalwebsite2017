@@ -131,7 +131,6 @@ html, body, #root, #reactRoot {
   align-items: center; }
 
 #main-container {
-  min-width: 70%;
   margin: 0 20px; }
 
 #main-title {
@@ -168,7 +167,8 @@ html, body, #root, #reactRoot {
   margin: 10px;
   display: block;
   width: 400px;
-  min-height: 500px; }
+  min-height: 500px;
+  opacity: 0; }
 
 .portfolio-image {
   display: block;
@@ -229,7 +229,7 @@ html, body, #root, #reactRoot {
       margin-top: 400px; }
 
     .portfolio-item {
-      margin-bottom: 350px; }
+      margin-bottom: 300px; }
 
     .portfolio-item:last-child {
       margin-bottom: 0; } } }
