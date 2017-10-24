@@ -35,6 +35,10 @@ html, body, #root, #reactRoot {
   width: 100%;
 }
 
+::selection {
+  background: $light-blue; /* WebKit/Blink Browsers */
+}
+
 @import "navbar";
 @import "footer";
 @import "dots";
