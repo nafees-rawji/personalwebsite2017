@@ -16,10 +16,10 @@ html, body, #root, #reactRoot {
   justify-content: center;
   align-items: center;
 
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
 
   opacity: 0;
 }
@@ -28,7 +28,17 @@ html, body, #root, #reactRoot {
   text-align: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@import "navbar";
+@import "footer";
+@import "dots";
 @import "Sections/main_section";
 @import "Sections/portfolio";
-@import "navbar";
 @import "Sections/experience";
+@import "Sections/about";

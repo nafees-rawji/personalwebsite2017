@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Section from "../../Section";
 import PortfolioItem from "./PortfolioItem";
+import liveImage from '../../../Images/Portfolio/LiveImage.png'
 import placeholder from '../../../Images/placeholder.jpg'
 
 class Portfolio extends Component {
@@ -10,10 +11,14 @@ class Portfolio extends Component {
                      scrolledOutOfView={(e) => this.props.scrolledOutOfView(e, this.props.position)} position={this.props.position}
                      id={"portfolio"} sectionHeading={"Portfolio"}>
                 <div className="portfolio-gallery">
-                    <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
-                    <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
-                    <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
-                    <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
+                    <div className="column">
+                        <PortfolioItem img={liveImage} subheading="live competition 2017" imgAlt = "placeholder" url="http://google.com"/>
+                        <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
+                    </div>
+                    <div className="column">
+                        <PortfolioItem img={liveImage} subheading="live competition 2017" imgAlt = "placeholder" url="http://google.com"/>
+                        <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
+                    </div>
                 </div>
             </Section>
         );

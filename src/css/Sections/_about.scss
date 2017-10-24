@@ -1,0 +1,19 @@
+.about-options {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.about-options li {
+  margin: 10px 0;
+  font-size: 1.25em;
+}
+
+.about-options li:hover {
+  color: $light-blue;
+  cursor: pointer;
+}

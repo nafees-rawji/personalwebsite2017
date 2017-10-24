@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   z-index: 1000;
-  background-color: gray;
+  background-color: $gray;
   color: white;
   padding: 20px 0;
 
@@ -50,6 +50,7 @@
   @include tablet {
     color: black;
   }
+  cursor: pointer;
 }
 
 @include tablet {

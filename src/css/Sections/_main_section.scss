@@ -24,7 +24,7 @@
 
 .main-subheading {
   font-size: 1.5em;
-  color: gray;
+  color: $gray;
   @include large-desktop  {
     font-size: 2em;
   }
