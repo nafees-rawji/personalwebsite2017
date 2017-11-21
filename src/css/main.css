@@ -251,6 +251,9 @@ html, body, #root, #reactRoot {
 .experience-title {
   color: #94ccc9; }
 
+.experience-body {
+  white-space: pre-wrap; }
+
 .right {
   text-align: right; }
 

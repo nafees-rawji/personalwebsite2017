@@ -5,11 +5,13 @@ import ExperienceItem from "./ExperienceItem";
 class Experience extends Component {
     render() {
         return (
-            <Section scrolledIntoView={(e) => this.props.scrolledIntoView(e, this.props.position)} className={this.props.className}
-                     scrolledOutOfView={(e) => this.props.scrolledOutOfView(e, this.props.position)} position={this.props.position}
+            <Section scrolledIntoView={(e) => this.props.scrolledIntoView(e, this.props.position)}
+                     className={this.props.className}
+                     scrolledOutOfView={(e) => this.props.scrolledOutOfView(e, this.props.position)}
+                     position={this.props.position}
                      id={"experience"} sectionHeading={"Experience"}>
                 <ExperienceItem title={"TD Canada (Summer 2017)"} textRight={false}
-                                body={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh nulla, ornare ac turpis non, consectetur mollis lacus. Praesent at consectetur sem. Pellentesque efficitur rhoncus lorem, in varius velit congue id. Donec quis velit sed massa iaculis aliquet. Quisque convallis molestie urna tincidunt iaculis. Maecenas volutpat vel sem in eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sodales feugiat arcu. Fusce aliquet varius justo, ac aliquet mi faucibus vitae."}/>
+                                body={"Over the summer of 2017, I worked as an Android Developer for TD Bank. During my time at TD I was tasked with developing a section of the TD Canada App (which you can find on the Google Play Store) which would allow users to see their credit score within the app. I completed this section on time and it was scheduled to launch in November after I left. Unfortunately, the back-end service which actually determined your credit score was provided by Equifax, and in lieu of their recent security troubles the entire project was scrapped.\n\nNevertheless, I learned a lot from my time at TD not only about Android Development but the software development process in such a large project as well. Working in an Agile environment with daily scrum meetings and code reviews before every merge ensured that my code was always on time and of good quality. I also was introduced to tools such as Jira and Jenkins during my time at TD."}/>
                 <ExperienceItem title={"Live Competition (2016-2017)"} textRight={true}
                                 body={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh nulla, ornare ac turpis non, consectetur mollis lacus. Praesent at consectetur sem. Pellentesque efficitur rhoncus lorem, in varius velit congue id. Donec quis velit sed massa iaculis aliquet. Quisque convallis molestie urna tincidunt iaculis. Maecenas volutpat vel sem in eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sodales feugiat arcu. Fusce aliquet varius justo, ac aliquet mi faucibus vitae."}/>
                 <ExperienceItem title={"Cofax Buisiness Systems (2016-2017)"} textRight={false}

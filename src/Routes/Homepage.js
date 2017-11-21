@@ -7,7 +7,6 @@ import Portfolio from "../Components/Sections/Portfolio/Portfolio";
 import Skills from "../Components/Sections/Skills";
 import Navbar from "../Components/Navbar";
 import Experience from "../Components/Sections/Experience/Experience";
-import Footer from "../Components/Footer/Footer";
 import scrollToComponent from 'react-scroll-to-component';
 import Dots from "../Components/Dots";
 
@@ -67,7 +66,9 @@ class Homepage extends Component {
 
         return (
             <div id={"reactRoot"} onScroll={this.handleScroll}>
-                <Dots number={numberOfSections} active={this.state.currentElement} handleCLick={(i) => {scrollToComponent(this.sections[i])}}/>
+                <Dots number={numberOfSections} active={this.state.currentElement} handleCLick={(i) => {scrollToComponent(this.sections[i], {
+                    align: 'top',
+                })}}/>
                 <Navbar>
                         <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[1], {
                             align: 'top',
