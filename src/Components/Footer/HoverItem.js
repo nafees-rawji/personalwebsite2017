@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class FooterItem extends Component {
+class HoverItem extends Component {
     constructor() {
         super();
         this.state = {
@@ -23,12 +23,12 @@ class FooterItem extends Component {
     render() {
         const img = (this.state.hovered) ? this.props.blueImg : this.props.img;
         return (
-            <a href={this.props.src} onMouseEnter={this.onEnter.bind(this)}
+            <div href={this.props.src} onMouseEnter={this.onEnter.bind(this)}
                onMouseLeave={this.onLeave.bind(this)}>
-                <img src={img} alt={this.props.alt}/>
-            </a>
+                <img id={this.props.id} src={img} alt={this.props.alt}/>
+            </div>
         );
     }
 }
 
-export default FooterItem;
+export default HoverItem;

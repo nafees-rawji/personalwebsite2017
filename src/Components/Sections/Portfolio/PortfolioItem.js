@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Waypoint from 'react-waypoint';
+import {Link} from "react-router-dom";
 
 
 class PortfolioItem extends Component {
@@ -27,10 +28,10 @@ class PortfolioItem extends Component {
                 topOffset={this.state.offset}
                 bottomOffset={this.state.offset}>
                 <div className={classNames}>
-                    <a href={this.props.url} className="overlay-container">
+                    <Link to={this.props.url} className="overlay-container">
                         <div className="overlay"/>
                         <img className={"portfolio-image"} src={this.props.img} alt = {this.props.imgAlt}/>
-                    </a>
+                    </Link>
                     <h3>{this.props.subheading}</h3>
                 </div>
             </Waypoint>

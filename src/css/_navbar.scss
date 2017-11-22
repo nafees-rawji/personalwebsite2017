@@ -1,24 +1,50 @@
+@keyframes navbarIn
+{
+  0%   {background: transparent;
+  height: 70px}
+  0.00001%  {background: $gray;}
+  100% {height: 100%;}
+}
+
+@keyframes navbarOut
+{
+  0%   {height:100%; background: $gray;}
+  80%  {background: $gray; height: 70px}
+}
+
+
 .navbar {
   display: flex;
   position: fixed;
-  flex-direction: column;
+  flex-direction: row;
   top: 0;
   left: 0;
   align-items: center;
   width: 100%;
   z-index: 1000;
-  background-color: $gray;
+  height: 70px;
   color: white;
-  padding: 20px 0;
-
   @include tablet {
-    flex-direction: row;
+    height: auto;
     justify-content: flex-start;
     background-color: transparent;
     color: black;
     padding: 0;
-
   }
+}
+
+.navbar-in {
+  -webkit-animation: navbarIn 2s ease;
+  -o-animation: navbarIn 2s ease;
+  animation: navbarIn 2s ease;
+  background-color: $gray;
+  height: 100%;
+}
+
+.navbar-out {
+  -webkit-animation: navbarOut 2s ease;
+  -o-animation: navbarOut 2s ease;
+  animation: navbarOut 2s ease;
 }
 
 .navbar-title {
@@ -26,35 +52,87 @@
   @include tablet {
     display: inline;
     margin-left: 10px;
+    color: $gray;
   }
 }
 
+.dropdown {
+  color: $gray;
+  z-index: 10000;
+  font-size: 1.5em;
+  align-self: flex-start;
+  margin: 21px 20px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.dropdown-white {
+  display: block;
+  color: white;
+}
+
 .navbar ul {
+  display: none;
   margin: 0 0;
   padding: 0;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   @include tablet {
+    display: flex;
     margin-left: auto;
     margin-right: 10px;
   }
+}
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .nav-link {
   display: block;
   font-weight: 700;
-  margin: 0 5px;
+  margin: 20px;
   color: white;
-  @include tablet {
-    color: black;
-  }
   cursor: pointer;
+  @include tablet {
+    margin: 0 5px;
+    color: $gray;
+  }
 }
 
 @include tablet {
   .nav-link:hover {
+    color: $light-blue;
+  }
+}
+
+
+#back-arrow {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: none;
+  color: white;
+  text-decoration: none;
+  @include tablet {
+    width: 28px;
+    display: block;
+    color: $gray;
+    margin: 10px 20px;
+    border: solid $gray 3px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
+
+@include tablet {
+  #back-arrow:hover {
+    border-color: $light-blue;
     color: $light-blue;
   }
 }

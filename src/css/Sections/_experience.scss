@@ -11,8 +11,11 @@
 .experience-title {
   color: $light-blue;
 }
+
 .experience-body {
-  white-space: pre-wrap;
+  white-space: pre-line;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
 }
 
 .right {

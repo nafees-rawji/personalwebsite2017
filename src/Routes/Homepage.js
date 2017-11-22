@@ -37,6 +37,7 @@ class Homepage extends Component {
     }
 
 
+
     render() {
         const sections = [
             <MainSection key={"homepage"} position={0} scrolledIntoView={this.scrolledIntoView.bind(this)}
@@ -48,7 +49,7 @@ class Homepage extends Component {
                        ref={(section) => { this.sections[1] = section; }}/>,
 
             <Skills key = {"skills"} position={2} scrolledIntoView={this.scrolledIntoView.bind(this)}
-                    scrolledOutOfView={this.scrolledOutOfView.bind(this)}
+                    scrolledOutOfView={this.scrolledOutOfView.bind(this)}s
                     ref={(section) => { this.sections[2] = section; }}/>,
 
             <Experience key={"experience"} position={3}  scrolledIntoView={this.scrolledIntoView.bind(this)}
@@ -62,14 +63,14 @@ class Homepage extends Component {
             />
             ];
 
-        const numberOfSections = sections.length;
+        const numberOfSections = this.sections.length;
 
         return (
             <div id={"reactRoot"} onScroll={this.handleScroll}>
                 <Dots number={numberOfSections} active={this.state.currentElement} handleCLick={(i) => {scrollToComponent(this.sections[i], {
                     align: 'top',
                 })}}/>
-                <Navbar>
+                <Navbar b>
                         <p className={"nav-link"} onClick={() => {scrollToComponent(this.sections[1], {
                             align: 'top',
                             offset: -50

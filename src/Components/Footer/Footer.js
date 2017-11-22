@@ -5,7 +5,7 @@ import email from "../../Images/Footer/email.png";
 import emailBlue from "../../Images/Footer/email-blue.png";
 import linkedIn from "../../Images/Footer/linkedin.png";
 import linkedInBlue from "../../Images/Footer/linkedin-blue.png";
-import FooterItem from "./FooterItem";
+import FooterItem from "./HoverItem";
 
 
 class Footer extends Component {

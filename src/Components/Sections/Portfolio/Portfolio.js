@@ -12,7 +12,7 @@ class Portfolio extends Component {
                      id={"portfolio"} sectionHeading={"Portfolio"}>
                 <div className="portfolio-gallery">
                     <div className="column">
-                        <PortfolioItem img={liveImage} subheading="live competition 2017" imgAlt = "placeholder" url="http://google.com"/>
+                        <PortfolioItem img={liveImage} subheading="live competition 2017" imgAlt = "placeholder" url="/portfolio/live"/>
                         <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
                     </div>
                     <div className="column">
