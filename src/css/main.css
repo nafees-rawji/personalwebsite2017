@@ -292,6 +292,9 @@ html, body, #root, #reactRoot {
   align-items: center;
   max-width: 100%; }
 
+#construction-notice {
+  color: gray; }
+
 /**
   Staggered layout on tablet+
  */
@@ -367,7 +370,7 @@ html, body, #root, #reactRoot {
   display: flex;
   flex-direction: column;
   max-width: 90%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     @supports (display: grid) {
       .portfolio-overview {
         flex-direction: row;
@@ -379,29 +382,31 @@ html, body, #root, #reactRoot {
 
 .portfolio-title {
   margin: 20px auto 10px auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     @supports (display: grid) {
       .portfolio-title {
         margin: 0 auto; } } }
 
 .portfolio-overview-image {
-  width: 350px;
-  height: 600px;
+  width: 500px;
+  height: 800px;
   object-fit: cover;
-  margin: 10px auto; }
-  @media (min-width: 768px) {
+  margin: 30px auto; }
+  @media (min-width: 1024px) {
     @supports (display: grid) {
       .portfolio-overview-image {
         margin: 0 60px; } } }
 
 .portfolio-overview-body {
-  margin-top: 10px;
-  white-space: pre-line; }
+  margin-top: 20px;
+  white-space: pre-line;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5; }
 
 .portfolio-link {
   color: gray; }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   @supports (display: grid) {
     .portfolio-link:hover {
       color: #94ccc9; } } }
