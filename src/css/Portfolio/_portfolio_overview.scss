@@ -33,7 +33,7 @@
 .portfolio-overview-image {
   width: 500px;
   max-width: 90%;
-  height: 800px;
+  max-height: 800px;
   object-fit: cover;
   margin: 5% auto;
   @include desktop {
@@ -50,6 +50,7 @@
 
 .portfolio-link {
   color: gray;
+  margin-bottom: 10px;
 }
 
 @include desktop {
