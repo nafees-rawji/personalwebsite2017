@@ -13,13 +13,13 @@ class Portfolio extends Component {
                 <div className="portfolio-gallery">
                     <div className="column">
                         <PortfolioItem img={liveImage} subheading="live competition 2017" imgAlt = "placeholder" url="/portfolio/live"/>
-                        {/*<PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>*/}
+                        <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
                     </div>
                     <div className="column">
                         {/*<PortfolioItem img={liveImage} subheading="live competition 2017" imgAlt = "placeholder" url="http://google.com"/>*/}
-                        {/*<PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>*/}
+                        <PortfolioItem img={placeholder} subheading="placeholder" imgAlt = "placeholder" url="http://google.com"/>
                     </div>
-                    <h3 id="construction-notice">This Section is still under construction! More items will be added shortly.</h3>
+                    <h3 id="construction-notice">This section is still under construction! More items will be added shortly.</h3>
                 </div>
             </Section>
         );
