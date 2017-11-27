@@ -356,4 +356,54 @@ html, body, #root, #reactRoot {
   align-items: center;
   justify-content: center; }
 
+.portfolio-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center; }
+
+.portfolio-overview {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; }
+  @media (min-width: 768px) {
+    @supports (display: grid) {
+      .portfolio-overview {
+        flex-direction: row;
+        max-width: 80%; } } }
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column; }
+
+.portfolio-title {
+  margin: 20px auto 10px auto; }
+  @media (min-width: 768px) {
+    @supports (display: grid) {
+      .portfolio-title {
+        margin: 0 auto; } } }
+
+.portfolio-overview-image {
+  width: 350px;
+  height: 600px;
+  object-fit: cover;
+  margin: 10px auto; }
+  @media (min-width: 768px) {
+    @supports (display: grid) {
+      .portfolio-overview-image {
+        margin: 0 60px; } } }
+
+.portfolio-overview-body {
+  margin-top: 10px;
+  white-space: pre-line; }
+
+.portfolio-link {
+  color: gray; }
+
+@media (min-width: 768px) {
+  @supports (display: grid) {
+    .portfolio-link:hover {
+      color: #94ccc9; } } }
+
 /*# sourceMappingURL=main.css.map */
