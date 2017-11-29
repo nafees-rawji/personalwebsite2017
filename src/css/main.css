@@ -344,11 +344,15 @@ html, body, #root, #reactRoot {
   margin: 0;
   padding: 0; }
 
-.about-options li {
+.about-options li, .about-options a {
   margin: 10px 0;
   font-size: 1.25em; }
 
-.about-options li:hover {
+.about-options a {
+  color: black;
+  text-decoration: none; }
+
+.about-options li:hover, .about-options a:hover {
   color: #94ccc9;
   cursor: pointer; }
 

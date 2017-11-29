@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Section from "../Section";
 import Footer from "../Footer/Footer";
-
+import Resume from "../../Docs/Resume.pdf"
 class About extends Component {
     render() {
         return (
@@ -12,7 +12,7 @@ class About extends Component {
                      id={"about"} sectionHeading>
                 <h1>yeah, that's me</h1>
                 <ul className="about-options">
-                    <li onClick={this.props.backToTop}>resume</li>
+                    <a href={Resume}>resume</a>
                     <li onClick={this.props.backToTop}>back to top</li>
                 </ul>
                 <Footer/>
