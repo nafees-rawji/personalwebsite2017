@@ -1,4 +1,4 @@
-html, body, #root, #reactRoot {
+html, body, #root, #generic-root {
   width: 100%;
   height: 100%;
   font-family: 'Roboto Mono', sans-serif; }

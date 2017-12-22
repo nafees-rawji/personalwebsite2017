@@ -64,7 +64,7 @@ class Navbar extends Component {
         } else {
             content =
                 <div className={this.state.navbarClassNames} id={this.props.id}>
-                    <Link to={this.props.backPath}><HoverItem id={"back-arrow"} img={BackArrow} blueImg={BackArrowBlue}/></Link>
+                    <Link to={this.props.backPath}><HoverItem id={"back-arrow"} img={(this.props.white) ? BackArrow : BackArrow} blueImg={BackArrowBlue}/></Link>
                     <div className={this.state.mobileClassNames}>
                         <Link className={"nav-link"} to={this.props.backPath}>back</Link>
                     </div>

@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-
-
 class PortfolioOverview extends Component {
     render() {
         const body =

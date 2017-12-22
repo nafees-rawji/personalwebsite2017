@@ -9,6 +9,7 @@ import './css/main.css';
 import 'normalize.css';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import LiveCompetition from "./Routes/LiveCompetition";
+import Shopify from "./Routes/Shopify";
 
 const app = document.getElementById('root');
 
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Switch>
             <Route exact path='/' component={Homepage}/>
             <Route exact path='/portfolio/live' component={LiveCompetition}/>
+            <Route exact path='/portfolio/shopify' component={Shopify}/>
         </Switch>
     </BrowserRouter>
     , app);

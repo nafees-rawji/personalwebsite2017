@@ -1,0 +1,31 @@
+@import "shopify_colors";
+@import "../mixins";
+
+#shopify-root {
+  font-family: Helvetica, sans-serif;
+  color: $white;
+  width: 100%;
+  height: 100%;
+  background-color: $purple_dark;
+  overflow: auto; // to fix margins
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#shopify-content {
+  padding: 40px;
+}
+
+#shopify-title {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#shopify-divider {
+  margin: 0;
+  width: 30px;
+  border: 1.5px solid $green;
+}
+
+@import "shopify_main_section";

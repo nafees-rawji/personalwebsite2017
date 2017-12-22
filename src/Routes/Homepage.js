@@ -23,7 +23,6 @@ class Homepage extends Component {
     }
 
     scrollAndSetState(i) {
-        console.log("")
         scrollToComponent(this.sections[i]);
         this.setState({currentElement:i})
     }
@@ -33,7 +32,6 @@ class Homepage extends Component {
     }
 
     scrolledOutOfView(e, i) {
-        console.log("Scrolled Out of View", i);
     }
 
 
@@ -66,7 +64,7 @@ class Homepage extends Component {
         const numberOfSections = this.sections.length;
 
         return (
-            <div id={"reactRoot"} onScroll={this.handleScroll}>
+            <div id={"generic-root"} onScroll={this.handleScroll}>
                 <Dots number={numberOfSections} active={this.state.currentElement} handleCLick={(i) => {scrollToComponent(this.sections[i], {
                     align: 'top',
                 })}}/>

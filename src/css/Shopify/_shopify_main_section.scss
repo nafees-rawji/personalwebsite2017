@@ -1,0 +1,23 @@
+#shopify-main-section {
+  margin: 50px 0;
+}
+
+#shopify-subheading {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.shopify-field {
+  padding: 15px 0 15px 15px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  @include tablet {
+    width: 55%;
+    margin-right: 5%;
+  }
+}
+
+.shopify-field:focus {
+  outline: none;
+}
