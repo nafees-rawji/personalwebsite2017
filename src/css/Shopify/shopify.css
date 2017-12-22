@@ -6,8 +6,8 @@
   background-color: #000639;
   overflow: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
 
 #shopify-content {
   padding: 40px; }
@@ -21,6 +21,12 @@
   width: 30px;
   border: 1.5px solid #7AB55C; }
 
+#shopify-unsubscribe {
+  font-weight: 300;
+  margin-top: auto;
+  margin-bottom: 40px;
+  border-bottom: 1px solid white; }
+
 #shopify-main-section {
   margin: 50px 0; }
 
@@ -28,18 +34,70 @@
   font-size: 1.25em;
   font-weight: 300; }
 
-.shopify-field {
-  padding: 15px 0 15px 15px;
-  border-radius: 5px;
-  border: none;
-  width: 100%; }
+#shopify-fields {
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 768px) {
     @supports (display: grid) {
-      .shopify-field {
-        width: 55%;
-        margin-right: 5%; } } }
+      #shopify-fields {
+        flex-direction: row;
+        align-items: flex-start; } } }
 
-.shopify-field:focus {
+.shopify-input {
+  padding: 0 0 0 15px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    @supports (display: grid) {
+      .shopify-input {
+        width: 55%;
+        margin-right: 5%;
+        margin-bottom: 0; } } }
+  .shopify-input::-webkit-input-placeholder {
+    color: #7B7B7B; }
+  .shopify-input:-moz-placeholder {
+    color: #7B7B7B; }
+  .shopify-input::-moz-placeholder {
+    color: #7B7B7B; }
+  .shopify-input:-ms-input-placeholder {
+    color: #7B7B7B; }
+
+.shopify-input:focus {
   outline: none; }
+
+.shopify-dropdown {
+  width: 100%;
+  color: gray; }
+  @media (min-width: 768px) {
+    @supports (display: grid) {
+      .shopify-dropdown {
+        width: 40%; } } }
+
+.Select-value-label {
+  line-height: 50px; }
+
+.Select-placeholder {
+  color: #7B7B7B;
+  line-height: 50px; }
+
+#shopify-submit-button {
+  background-color: #5c6ac4;
+  color: #ffffff;
+  border: none;
+  padding: 20px 0;
+  margin: 30px 0;
+  border-radius: 6px;
+  width: 100%; }
+
+#shopify-submit-button:focus {
+  outline: none; }
+
+#shopify-error-message {
+  color: #C23628; }
+
+#shopify-error-message {
+  color: #C23628; }
 
 /*# sourceMappingURL=shopify.css.map */

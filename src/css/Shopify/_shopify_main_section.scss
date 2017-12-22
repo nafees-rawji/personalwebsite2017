@@ -1,3 +1,11 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+
 #shopify-main-section {
   margin: 50px 0;
 }
@@ -7,17 +15,70 @@
   font-weight: 300;
 }
 
-.shopify-field {
-  padding: 15px 0 15px 15px;
-  border-radius: 5px;
-  border: none;
-  width: 100%;
+#shopify-fields {
+  display: flex;
+  flex-direction: column;
   @include tablet {
-    width: 55%;
-    margin-right: 5%;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
-.shopify-field:focus {
+.shopify-input {
+  padding: 0 0 0 15px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  @include tablet {
+    width: 55%;
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+  @include placeholder {
+    color: $shopify_gray;
+  }
+}
+
+.shopify-input:focus {
   outline: none;
 }
+
+.shopify-dropdown {
+  width: 100%;
+  color: gray;
+  @include tablet {
+    width: 40%;
+  }
+}
+
+// center select options and palceholder
+.Select-value-label {
+  line-height: 50px;
+}
+
+.Select-placeholder {
+  color: $shopify_gray;
+  line-height: 50px;
+}
+
+#shopify-submit-button {
+  background-color: $purple_light;
+  color: $white;
+  border: none;
+  padding: 20px 0;
+  margin: 30px 0;
+  border-radius: 6px;
+  width: 100%;
+}
+
+#shopify-submit-button:focus {
+  outline: none;
+}
+
+#shopify-error-message {
+  color: $red;
+}#shopify-error-message {
+  color: $red;
+}
+

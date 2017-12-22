@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 import '../css/main.css';
-import '../css/Shopify/shopify.css'
 import ShopifyMainSection from "../Components/Shopify/ShopifyMainSection";
+import '../css/Shopify/shopify.css'
 
 class Shopify extends Component {
 
@@ -14,6 +14,7 @@ class Shopify extends Component {
                     <hr id="shopify-divider"/>
                     <ShopifyMainSection/>
                 </div>
+                <p id="shopify-unsubscribe">Unsubscribe</p>
             </div>
         );
     }
