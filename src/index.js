@@ -9,7 +9,7 @@ import './css/main.css';
 import 'normalize.css';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import LiveCompetition from "./Routes/LiveCompetition";
-import Shopify from "./Routes/Shopify";
+import Shopify from "./Shopify/Shopify";
 
 const app = document.getElementById('root');
 

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 import '../css/main.css';
-import ShopifyMainSection from "../Components/Shopify/ShopifyMainSection";
-import '../css/Shopify/shopify.css'
+import ShopifyMainSection from "../Shopify/components/ShopifyMainSection";
+import '../Shopify/css/shopify.css'
 
 class Shopify extends Component {
 
