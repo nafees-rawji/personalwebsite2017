@@ -23,10 +23,10 @@ class HoverItem extends Component {
     render() {
         const img = (this.state.hovered) ? this.props.blueImg : this.props.img;
         return (
-            <div href={this.props.src} onMouseEnter={this.onEnter.bind(this)}
+            <a href={this.props.src} onMouseEnter={this.onEnter.bind(this)}
                onMouseLeave={this.onLeave.bind(this)}>
                 <img id={this.props.id} src={img} alt={this.props.alt}/>
-            </div>
+            </a>
         );
     }
 }

@@ -27,6 +27,13 @@
   margin-bottom: 40px;
   border-bottom: 1px solid white; }
 
+#shopify-source-link {
+  color: white;
+  display: table;
+  margin-left: auto;
+  margin-bottom: 10px;
+  font-size: 0.85em; }
+
 #shopify-main-section {
   margin: 50px 0; }
 

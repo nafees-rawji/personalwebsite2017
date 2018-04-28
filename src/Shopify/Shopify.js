@@ -10,6 +10,7 @@ class Shopify extends Component {
         return (
             <div id="shopify-root">
                 <div id="shopify-content">
+                    <a id="shopify-source-link" href="https://github.com/nafees-rawji/personalwebsite2017/tree/master/src/Shopify">Code on github</a>
                     <h1 id="shopify-title">Stay up to date with ecommerce trends with Shopify's newsletter</h1>
                     <hr id="shopify-divider"/>
                     <ShopifyMainSection/>
