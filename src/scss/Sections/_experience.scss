@@ -1,0 +1,100 @@
+@import "../colors";
+@import "../mixins";
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+#timeline {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  width: 300px;
+  height: 300px;
+  border: 5px solid $gray;
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    border-width: 7px;
+  }
+}
+
+.timeline-body, .timeline-thumbnail  {
+  text-align: center;
+}
+
+.timeline-body, .timeline-thumbnail {
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.timeline-body {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.timeline-thumbnail {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+
+}
+
+.timeline-thumbnail img {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline-divider {
+  transition: all 1s ease-in-out;
+  border-left: solid 5px $gray;
+  height: 200px;
+  width: 0;
+  z-index: 1;
+  @include tablet {
+    border-width: 7px;
+  }
+}
+
+@include tablet {
+  .timeline-item:hover {
+    border-color: $light-blue;
+    transform: scale(1.03);
+  }
+
+  .timeline-item:hover .timeline-body {
+    opacity: 1;
+  }
+
+  .timeline-item:hover .timeline-thumbnail {
+    opacity: 0;
+  }
+}
+

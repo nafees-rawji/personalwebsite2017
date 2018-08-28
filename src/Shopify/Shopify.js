@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../css/main.css';
+import '../scss/main.scss';
 import ShopifyMainSection from "../Shopify/components/ShopifyMainSection";
 import '../Shopify/css/shopify.css'
 

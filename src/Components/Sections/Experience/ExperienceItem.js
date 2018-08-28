@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
 
+
 class ExperienceItem extends Component {
     render() {
-        let classNames = "experience-item " + ((this.props.textRight) ? "right": "");
-
         return (
-           <div className={classNames}>
-               <h3 className="experience-title">{this.props.title}</h3>
-               <p  className="experience-body">{this.props.body}</p>
+           <div className={'timeline-item'}>
+               <div className={'timeline-thumbnail'}>
+                   <img src={this.props.img}/>
+               </div>
+               <div className={'timeline-body'}>
+                   <h4>{this.props.title}</h4>
+                   <p>{this.props.body}</p>
+               </div>
            </div>
         );
     }

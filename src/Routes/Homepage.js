@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../css/main.css';
+import '../scss/main.scss';
 import MainSection from "../Components/Sections/MainSection";
 import About from "../Components/Sections/About";
 import Portfolio from "../Components/Sections/Portfolio/Portfolio";

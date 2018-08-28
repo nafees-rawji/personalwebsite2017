@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../css/main.css';
+import '../scss/main.scss';
 import Navbar from "../Components/Navbar";
 import PortfolioOverview from "../Components/PortfolioPages/PortfolioOverview";
 import mainImage from '../Images/Portfolio/LiveImage.png'
