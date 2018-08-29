@@ -22,19 +22,18 @@ class Section extends Component {
         });
     }
 
-    handleExits(e) {
-        // console.log("Left", this.props.position);
-        this.setState({
-            classes: "fadeOut"
-        });
-    }
+    // handleExits(e) {
+    //     // console.log("Left", this.props.position);
+    //     this.setState({
+    //         classes: "fadeOut"
+    //     });
+    // }
 
     render() {
         const classNames = "section animated " + this.state.classes + " " + this.props.className;
         return (
             <div className={classNames} id={this.props.id}>
                 <Waypoint onEnter={this.handleEntrance.bind(this)}
-                          onLeave={this.handleExits.bind(this)}
                           topOffset={this.state.offset}
                           bottomOffset={this.state.offset}
                           >

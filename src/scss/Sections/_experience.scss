@@ -1,22 +1,28 @@
 @import "../colors";
 @import "../mixins";
 
-@keyframes fadeInFromNone {
+@keyframes pulse {
   0% {
-    display: none;
-    opacity: 0;
+    box-shadow: 0 0 0 0 rgba(148, 204, 201, 0.6);
   }
-
-  1% {
-    display: block;
-    opacity: 0;
+  70% {
+    box-shadow: 0 0 0 10px rgba(148, 204, 201, 0);
   }
-
   100% {
-    display: block;
+    box-shadow: 0 0 0 10px rgba(148, 204, 201, 0);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  } 20% {
+    opacity: 0;
+  } 100% {
     opacity: 1;
   }
 }
+
 
 #timeline {
   margin-top: 40px;
@@ -26,6 +32,8 @@
 }
 
 .timeline-item {
+  box-sizing: border-box;
+  position: relative;
   width: 300px;
   height: 300px;
   border: 5px solid $gray;
@@ -67,7 +75,7 @@
 }
 
 .timeline-thumbnail img {
-  max-width: 100%;
+  max-width: 90%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -83,10 +91,65 @@
   }
 }
 
+.timeline-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.timeline-divider-left {
+  display: none;
+}
+
 @include tablet {
+  .group-divider {
+    display: none;
+  }
+
+  .dividers {
+    height: 200px;
+    width: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timeline-item-left {
+    margin-right: 20px;
+  }
+
+  .timeline-item-right {
+    margin-left: 20px;
+  }
+
+  .timeline-divider-left {
+    display: block;
+    position: absolute;
+    height: 267px;
+    border-radius: 5px;
+    transform: translate(-89px, 1px) rotate(-40deg);
+    margin: 0;
+    //top: 0;
+    //left: 50%
+  }
+
+  .timeline-divider-right {
+    position: absolute;
+    height: 267px;
+    transform: translate(89px, 1px) rotate(40deg);
+    margin: 0;
+    border-radius: 5px;
+    //top: 0
+  }
+
   .timeline-item:hover {
     border-color: $light-blue;
     transform: scale(1.03);
+    animation: pulse 2s infinite;
   }
 
   .timeline-item:hover .timeline-body {
@@ -96,5 +159,50 @@
   .timeline-item:hover .timeline-thumbnail {
     opacity: 0;
   }
+
+  .timeline-item:hover .click-icon {
+    display: none;
+  }
 }
 
+
+
+.timeline-item:active {
+  border-color: $light-blue;
+  transform: scale(1.03);
+  animation: pulse 2s infinite;
+}
+
+.timeline-item:active .timeline-body {
+  opacity: 1;
+}
+
+.timeline-item:active .timeline-thumbnail {
+  opacity: 0;
+}
+
+.timeline-item:active .click-icon {
+  display: none;
+}
+
+
+.click-icon {
+  width: 16px;
+  height: 28px;
+  border-radius: 9px;
+  border: solid 2px $gray;
+  position: relative;
+  top: 120px;
+}
+
+.click-icon-click {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background-color: $gray;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+
+  animation: fadeInOut 2s infinite;
+}
