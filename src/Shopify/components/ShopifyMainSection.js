@@ -20,6 +20,7 @@ class ShopifyMainSection extends Component {
 
     submitClicked() {
         // regex from stackoverflow (don't need to reinvent the wheel)
+        /*eslint no-useless-escape: "off"*/
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (re.test(this.state.email.toLowerCase())) {
             console.log(this.state.email);

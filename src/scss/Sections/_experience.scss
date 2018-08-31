@@ -57,7 +57,7 @@
   padding: 20px;
   box-sizing: border-box;
   margin: 0;
-  width: 300px;
+  width: 280px;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -66,6 +66,10 @@
 .timeline-body {
   opacity: 0;
   transition: opacity 0.5s linear;
+}
+
+.timeline-body p {
+  font-size: 0.9em;
 }
 
 .timeline-thumbnail {
@@ -192,7 +196,7 @@
   border-radius: 9px;
   border: solid 2px $gray;
   position: relative;
-  top: 120px;
+  top: 115px;
 }
 
 .click-icon-click {

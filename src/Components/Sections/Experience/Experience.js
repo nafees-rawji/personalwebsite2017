@@ -3,7 +3,7 @@ import Section from "../../Section";
 import ExperienceItem from "./ExperienceItem";
 import tr from '../../../Images/ThomsonReuters.png';
 import td from '../../../Images/td.png';
-import howlplay from '../../../Images/howlplay.svg';
+import cofax from '../../../Images/cofax.jpg';
 import weav from '../../../Images/weav.gif';
 
 class Experience extends Component {
@@ -16,17 +16,17 @@ class Experience extends Component {
                      id={"experience"} sectionHeading={"Experience"}>
                 <div id={'timeline'}>
                     <div className={'timeline-group'}>
-                        <ExperienceItem className={'timeline-item-left'} img={weav} title={'Weav (2018 - Present)'} body={'Worked on application development and deployment using Node.js, React.js, and AWS (EC2, S3 and ECS).'} first={true}/>
+                        <ExperienceItem className={'timeline-item-left'} img={weav} title={'Weav (2018 - Present)'} body={'A Toronto based startup which attempts to connect students for long distance rideshares. Used Node.js, Express and MongoDB along with React Native for backend and iOS app development.'} first={true}/>
                         <div className={'timeline-divider group-divider'}/>
-                        <ExperienceItem  className={'timeline-item-right'} img={tr} title={'Thomson Reuters (2018 - Present)'} body={'Worked on application development and deployment using Node.js, React.js, and AWS (EC2, S3 and ECS).'} first={true}/>
+                        <ExperienceItem  className={'timeline-item-right'} img={tr} title={'Thomson Reuters (2018 - Present)'} body={'Worked on application development and deployment using Node.js, React.js, and AWS (EC2, S3 and ECS).'}/>
                     </div>
                     <div className={'timeline-group dividers'}>
                         <div className={'timeline-divider timeline-divider-left'}/>
                         <div className={'timeline-divider timeline-divider-right'}/>
                     </div>
-                    <ExperienceItem img={howlplay} title={'HowlPlay (Winter 2018)'} body={''}/>
-                    <div className={'timeline-divider'}/>
                     <ExperienceItem img={td} title={'TD Canada (Summer 2017)'} body={'Worked on the production TD Canada Android Application developing a section that allows users to see their credit score.'}/>
+                    <div className={'timeline-divider'}/>
+                    <ExperienceItem img={cofax} title={'Cofax Business Systems (Summer 2016)'} body={'Worked on the production TD Canada Android Application developing a section that allows users to see their credit score.'}/>
                 </div>
             </Section>
         );

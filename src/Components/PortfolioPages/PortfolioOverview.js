@@ -11,7 +11,7 @@ class PortfolioOverview extends Component {
         return (
             <div className={"portfolio-container"}>
                 <div className={"portfolio-overview"} id={this.props.id}>
-                    <img className={"portfolio-overview-image"} src={this.props.img}/>
+                    <img className={"portfolio-overview-image"} src={this.props.img} alt={this.props.title}/>
                     {body}
                 </div>
             </div>

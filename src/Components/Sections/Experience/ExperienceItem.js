@@ -6,7 +6,7 @@ class ExperienceItem extends Component {
         return (
            <div className={`timeline-item ${this.props.className}`}>
                <div className={'timeline-thumbnail'}>
-                   <img src={this.props.img}/>
+                   <img src={this.props.img} alt={this.props.title}/>
                </div>
                {(this.props.first) ? <div className={'click-icon'}>
                    <div className={'click-icon-click'}/>
