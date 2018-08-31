@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Section from "../../Section";
 import ExperienceItem from "./ExperienceItem";
-import tr from '../../../Images/ThomsonReuters.png';
-import td from '../../../Images/td.png';
-import cofax from '../../../Images/cofax.jpg';
-import weav from '../../../Images/weav.gif';
+import tr from '../../../Images/experience/tr.png';
+import td from '../../../Images/experience/td.png';
+import cofax from '../../../Images/experience/cofax.jpg';
+import weav from '../../../Images/experience/weav.gif';
 
 class Experience extends Component {
     render() {
@@ -26,7 +26,7 @@ class Experience extends Component {
                     </div>
                     <ExperienceItem img={td} title={'TD Canada (Summer 2017)'} body={'Worked on the production TD Canada Android Application developing a section that allows users to see their credit score.'}/>
                     <div className={'timeline-divider'}/>
-                    <ExperienceItem img={cofax} title={'Cofax Business Systems (Summer 2016)'} body={'Worked on the production TD Canada Android Application developing a section that allows users to see their credit score.'}/>
+                    <ExperienceItem img={cofax} title={'Cofax Business Systems (Summer 2016)'} body={'Re-wrote a photocopier metering system using Node.js, MySQL, HTML, CSS and JQuery.'}/>
                 </div>
             </Section>
         );
